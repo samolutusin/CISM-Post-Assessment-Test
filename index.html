@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TECHFORCE Assessment Portal - CompTIA Network+ Foundations Quiz</title>
+    <title>TECHFORCE Assessment Portal - CISM Post Assessment</title>
     <style>
         :root {
             --primary-color: #004b87;
@@ -240,8 +240,8 @@
 <div class="container">
     <header>
         <h1>TECHFORCE Assessment Portal</h1>
-        <p>CompTIA Network+ Foundations Quiz</p>
-        <div class="subtitle-line">20 simple questions based on The Official CompTIA Network+ Student Guide[cite: 2]</div>
+        <p>CISM Post Assessment</p>
+        <div class="subtitle-line">20 objective questions based on the CISM study notes — Domains 1–4: Information Security Governance, Risk Management, Program Development and Incident Management</div>
         <div class="meta-chips">
             <span class="meta-chip">Questions: 20 multiple-choice</span>
             <span class="meta-chip">Points: 1 each · 20 total</span>
@@ -257,7 +257,7 @@
              - Primary recipient: mactusinit@gmail.com  (form action above)
              - CC recipient:      atundaoba@gmail.com   (_cc field below)
              ============================================================ -->
-        <input type="hidden" name="_subject" id="cfg-subject" value="Official Result: TECHFORCE Network+ Foundations Quiz">
+        <input type="hidden" name="_subject" id="cfg-subject" value="Official Result: TECHFORCE CISM Post Assessment">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_cc" id="cfg-cc" value="funmilayo.muritala@techforceitservices.com">
@@ -267,7 +267,7 @@
         <input type="hidden" name="Student First Name" id="payload-first">
         <input type="hidden" name="Student Last Name"  id="payload-last">
         <input type="hidden" name="Student Email"      id="payload-email">
-        <input type="hidden" name="Assessment Title"   value="CompTIA Network+ Foundations Quiz">
+        <input type="hidden" name="Assessment Title"   value="CISM Post Assessment">
         <input type="hidden" name="Final Score & Percentage" id="payload-score">
         <input type="hidden" name="Result (Pass mark 70%)"   id="payload-result">
         <input type="hidden" name="Submission Date"    id="payload-date">
@@ -296,7 +296,7 @@
         <div class="instructions-card">
             <h3>Instructions</h3>
             <ul>
-                <li>This quiz contains 20 simple questions based on The Official CompTIA Network+ Student Guide[cite: 2].</li>
+                <li>This is the CISM Post Assessment: 20 objective questions based on the CISM study notes for Domains 1–4 (Information Security Governance, Risk Management, Program Development and Incident Management).</li>
                 <li>Each question has four options (A–D). Choose the single best answer for each question and select the letter of your answer. Do not mark more than one answer per question[cite: 2].</li>
                 <li>Passing benchmark: 70% (14 of 20 questions). Aim to complete within 30 minutes.</li>
                 <li>Enter your first name, last name, and email at the top. All fields and all questions are required before you can submit.</li>
@@ -344,7 +344,7 @@
 const PRIMARY_EMAIL    = "mactusinit@gmail.com";
 const CC_EMAIL         = "temitopeabidemi155@gmail.com";
 const PASS_MARK        = 0.70;
-const ASSESSMENT_TITLE = "CompTIA Network+ Foundations Quiz";
+const ASSESSMENT_TITLE = "CISM Post Assessment";
 const PORTAL_NAME      = "TECHFORCE Assessment Portal";
 
 /* ============================================================================
@@ -353,248 +353,268 @@ const PORTAL_NAME      = "TECHFORCE Assessment Portal";
    ============================================================================ */
 const quizData = [
     {
-        sectionTitle: "FOUNDATIONS QUIZ QUESTIONS",
+        sectionTitle: "CISM POST ASSESSMENT QUESTIONS",
         sectionWeight: "20 QUESTIONS \u00b7 1 POINT EACH \u00b7 20 TOTAL",
         questions: [
             {
                 id: "q1",
                 num: 1,
-                text: "Which OSI layer do routers primarily operate at?",
+                domain: "Domain 1 – Governance",
+                text: "Which group carries the primary responsibility for information security governance in an organization?",
                 options: [
-                    "A. Layer 1 (Physical)",
-                    "B. Layer 3 (Network)",
-                    "C. Layer 2 (Data Link)",
-                    "D. Layer 4 (Transport)"
+                    "A. The security analysts who configure controls",
+                    "B. The external audit firm",
+                    "C. The board of directors or equivalent senior body",
+                    "D. The IT operations team"
                 ],
-                answer: "B"
+                answer: "C"
             },
             {
                 id: "q2",
                 num: 2,
-                text: "Which device forwards frames within a LAN based on MAC addresses?",
+                domain: "Domain 1 – Governance",
+                text: "In a RACI matrix, how many individuals should normally be assigned as Accountable for a single task?",
                 options: [
-                    "A. Router",
-                    "B. Modem",
-                    "C. Repeater",
-                    "D. Switch"
+                    "A. At least two, so responsibility is shared",
+                    "B. As many as the project requires",
+                    "C. None — accountability is optional",
+                    "D. Exactly one"
                 ],
                 answer: "D"
             },
             {
                 id: "q3",
                 num: 3,
-                text: "What is the default port number for HTTPS?",
+                domain: "Domain 1 – Governance",
+                text: "A manager has ultimate accountability for a data asset and decides who may access it, how long it is retained and how it is destroyed. This person primarily acts as the:",
                 options: [
-                    "A. 443",
-                    "B. 80",
-                    "C. 22",
-                    "D. 25"
-                ],
-                answer: "A"
-            },
-            {
-                id: "q4",
-                num: 4,
-                text: "Which protocol replaced Telnet for secure, encrypted remote administration?",
-                options: [
-                    "A. FTP",
-                    "B. SNMP",
-                    "C. SSH",
-                    "D. TFTP"
-                ],
-                answer: "C"
-            },
-            {
-                id: "q5",
-                num: 5,
-                text: "What is the main job of DNS?",
-                options: [
-                    "A. Assign IP addresses automatically",
-                    "B. Translate domain names into IP addresses",
-                    "C. Encrypt web traffic",
-                    "D. Translate private IP addresses to public ones"
+                    "A. System administrator",
+                    "B. Data owner",
+                    "C. Data user",
+                    "D. Data custodian"
                 ],
                 answer: "B"
             },
             {
+                id: "q4",
+                num: 4,
+                domain: "Domain 1 – Governance",
+                text: "Which set of perspectives makes up the four views of the Balanced Scorecard as applied to information security?",
+                options: [
+                    "A. Financial, Customer, Internal Processes, Innovation / Learning",
+                    "B. People, Process, Technology, Compliance",
+                    "C. Confidentiality, Integrity, Availability, Privacy",
+                    "D. Plan, Do, Check, Act"
+                ],
+                answer: "A"
+            },
+            {
+                id: "q5",
+                num: 5,
+                domain: "Domain 2 – Risk Management",
+                text: "What is residual risk?",
+                options: [
+                    "A. The risk that exists before any controls are applied",
+                    "B. The maximum risk an organization can absorb without failing",
+                    "C. The risk that remains after controls and safeguards are in place",
+                    "D. The risk that has been fully transferred to a third party"
+                ],
+                answer: "C"
+            },
+            {
                 id: "q6",
                 num: 6,
-                text: "What does DHCP do?",
+                domain: "Domain 2 – Risk Management",
+                text: "Annual Loss Expectancy (ALE) is calculated as:",
                 options: [
-                    "A. Resolves hostnames to IP addresses",
-                    "B. Blocks unauthorized traffic",
-                    "C. Synchronizes system clocks",
-                    "D. Automatically assigns IP configuration to clients"
+                    "A. Asset value ÷ Annualized Rate of Occurrence",
+                    "B. Impact × Vulnerability",
+                    "C. Asset value × Exposure factor",
+                    "D. Single Loss Expectancy × Annualized Rate of Occurrence"
                 ],
                 answer: "D"
             },
             {
                 id: "q7",
                 num: 7,
-                text: "Which of these is a private IPv4 address?",
+                domain: "Domain 2 – Risk Management",
+                text: "An intrusion detection system (IDS) alerts the security team while an attack is in progress. This is an example of which category of control?",
                 options: [
-                    "A. 192.168.1.10",
-                    "B. 8.8.8.8",
-                    "C. 172.32.0.1",
-                    "D. 200.10.5.1"
+                    "A. Detective",
+                    "B. Corrective",
+                    "C. Preventive",
+                    "D. Compensating"
                 ],
                 answer: "A"
             },
             {
                 id: "q8",
                 num: 8,
-                text: "How many bits are in an IPv6 address?",
+                domain: "Domain 2 – Risk Management",
+                text: "An organization purchases a cyber-liability insurance policy to cover potential breach costs. Which risk treatment option has been applied?",
                 options: [
-                    "A. 32",
-                    "B. 48",
-                    "C. 128",
-                    "D. 64"
+                    "A. Risk acceptance",
+                    "B. Risk transfer",
+                    "C. Risk mitigation",
+                    "D. Risk avoidance"
                 ],
-                answer: "C"
+                answer: "B"
             },
             {
                 id: "q9",
                 num: 9,
-                text: "Which cable type transmits data as light and is immune to electromagnetic interference?",
+                domain: "Domain 3 – Security Program",
+                text: "The principle of \"never trust, always verify\", requiring continuous authentication and strict access control for every request regardless of location, describes:",
                 options: [
-                    "A. Unshielded twisted pair",
-                    "B. Fiber optic",
-                    "C. Coaxial",
-                    "D. Shielded twisted pair"
-                ],
-                answer: "B"
-            },
-            {
-                id: "q10",
-                num: 10,
-                text: "In which topology is every device connected to a central switch or hub?",
-                options: [
-                    "A. Star",
-                    "B. Bus",
-                    "C. Ring",
-                    "D. Mesh"
-                ],
-                answer: "A"
-            },
-            {
-                id: "q11",
-                num: 11,
-                text: "Which transport protocol is connectionless and does not guarantee delivery?",
-                options: [
-                    "A. TCP",
-                    "B. ICMP",
-                    "C. ARP",
-                    "D. UDP"
-                ],
-                answer: "D"
-            },
-            {
-                id: "q12",
-                num: 12,
-                text: "The ping command uses which protocol?",
-                options: [
-                    "A. TCP",
-                    "B. SNMP",
-                    "C. ICMP",
-                    "D. DHCP"
+                    "A. The CIA triad",
+                    "B. Role-based access control",
+                    "C. Zero Trust",
+                    "D. Defense in depth"
                 ],
                 answer: "C"
             },
             {
-                id: "q13",
-                num: 13,
-                text: "Which Windows command displays a computer's IP configuration?",
+                id: "q10",
+                num: 10,
+                domain: "Domain 3 – Security Program",
+                text: "Within the AAA model, which function tracks and logs user actions to support audit and accountability?",
                 options: [
-                    "A. ifconfig",
-                    "B. ipconfig",
-                    "C. nslookup",
-                    "D. netstat -r"
+                    "A. Authorization",
+                    "B. Authentication",
+                    "C. Identification",
+                    "D. Accounting"
+                ],
+                answer: "D"
+            },
+            {
+                id: "q11",
+                num: 11,
+                domain: "Domain 3 – Security Program",
+                text: "What is the primary objective of DevSecOps?",
+                options: [
+                    "A. To integrate automated security checks into every stage of the software lifecycle, from code commit through deployment",
+                    "B. To move all security testing to the end of the development lifecycle",
+                    "C. To replace developers with security analysts",
+                    "D. To outsource application security to a third party"
+                ],
+                answer: "A"
+            },
+            {
+                id: "q12",
+                num: 12,
+                domain: "Domain 3 – Security Program",
+                text: "Which metric is a Key Risk Indicator (KRI) rather than a Key Performance Indicator (KPI)?",
+                options: [
+                    "A. Number of security awareness sessions delivered",
+                    "B. Number of unpatched critical vulnerabilities in key systems",
+                    "C. Average incident resolution time",
+                    "D. Percentage of employees who completed awareness training"
                 ],
                 answer: "B"
             },
             {
+                id: "q13",
+                num: 13,
+                domain: "Domain 4 – Incident Management",
+                text: "In the incident management lifecycle, which phase immediately follows containment?",
+                options: [
+                    "A. Recovery",
+                    "B. Post-incident review",
+                    "C. Eradication",
+                    "D. Detection and analysis"
+                ],
+                answer: "C"
+            },
+            {
                 id: "q14",
                 num: 14,
-                text: "What is the subnet mask for a /24 network?",
+                domain: "Domain 4 – Incident Management",
+                text: "Why is a strict chain of custody essential when handling digital evidence?",
                 options: [
-                    "A. 255.255.0.0",
-                    "B. 255.255.255.128",
-                    "C. 255.255.255.252",
-                    "D. 255.255.255.0"
+                    "A. It speeds up the technical recovery of affected systems",
+                    "B. It guarantees the attacker will be prosecuted",
+                    "C. It replaces the need for a formal incident response plan",
+                    "D. It ensures evidence is not tampered with and remains admissible in legal or disciplinary proceedings"
                 ],
                 answer: "D"
             },
             {
                 id: "q15",
                 num: 15,
-                text: "What is the main purpose of a VLAN?",
+                domain: "Domain 4 – Incident Management",
+                text: "What is the primary goal of the containment phase of incident response?",
                 options: [
-                    "A. Logically separate a network into different broadcast domains",
-                    "B. Increase the speed of a single cable",
-                    "C. Translate IP addresses",
-                    "D. Provide wireless access"
+                    "A. To limit the spread and impact of the incident",
+                    "B. To restore normal business operations",
+                    "C. To identify the root cause of the incident",
+                    "D. To notify regulators and the media"
                 ],
                 answer: "A"
             },
             {
                 id: "q16",
                 num: 16,
-                text: "Which Wi-Fi security standard is the strongest of these?",
+                domain: "Domain 4 – Incident Management",
+                text: "What is the main purpose of a post-incident review (lessons learned)?",
                 options: [
-                    "A. WEP",
-                    "B. WPA",
-                    "C. WPA3",
-                    "D. Open (no security)"
-                ],
-                answer: "C"
-            },
-            {
-                id: "q17",
-                num: 17,
-                text: "What does a firewall do?",
-                options: [
-                    "A. Converts digital data to analog signals",
-                    "B. Filters network traffic based on rules",
-                    "C. Assigns MAC addresses",
-                    "D. Stores backup copies of data"
+                    "A. To assign blame to the individuals responsible for the incident",
+                    "B. To analyze root causes and refine plans, training and controls to prevent recurrence",
+                    "C. To calculate the insurance claim for the incident",
+                    "D. To close the incident ticket as quickly as possible"
                 ],
                 answer: "B"
             },
             {
-                id: "q18",
-                num: 18,
-                text: "Which tool would you use to check whether a copper cable has a break or wiring fault?",
+                id: "q17",
+                num: 17,
+                domain: "BCDR – Domain 4",
+                text: "A Recovery Point Objective (RPO) defines:",
                 options: [
-                    "A. Cable tester",
-                    "B. Spectrum analyzer",
-                    "C. Protocol analyzer",
-                    "D. Loopback adapter only"
+                    "A. The time required to activate an alternate recovery site",
+                    "B. The total cost of recovering from a disaster",
+                    "C. The maximum tolerable amount of data loss, measured in time, which drives backup frequency",
+                    "D. The maximum acceptable downtime before services must be restored"
                 ],
-                answer: "A"
+                answer: "C"
             },
             {
-                id: "q19",
-                num: 19,
-                text: "What is the first step in the CompTIA troubleshooting methodology?",
+                id: "q18",
+                num: 18,
+                domain: "BCDR – Domain 4",
+                text: "What is the primary purpose of a Business Impact Analysis (BIA)?",
                 options: [
-                    "A. Implement the solution",
-                    "B. Document findings",
-                    "C. Establish a plan of action",
-                    "D. Identify the problem"
+                    "A. To test the technical performance of backup systems",
+                    "B. To evaluate the financial standing of third-party vendors",
+                    "C. To document the IT asset inventory",
+                    "D. To identify critical business functions and dependencies, and determine acceptable downtime and recovery objectives"
                 ],
                 answer: "D"
             },
             {
+                id: "q19",
+                num: 19,
+                domain: "BCDR – Domain 4",
+                text: "Which type of alternate recovery site provides basic infrastructure but no pre-installed systems or data, making it the cheapest but slowest to activate?",
+                options: [
+                    "A. Cold site",
+                    "B. Mirrored site",
+                    "C. Warm site",
+                    "D. Hot site"
+                ],
+                answer: "A"
+            },
+            {
                 id: "q20",
                 num: 20,
-                text: "Which protocol is used to send email from a client to a mail server?",
+                domain: "BCDR – Domain 4",
+                text: "In continuity plan testing, running the recovery environment alongside live operations without interrupting primary workflows is called:",
                 options: [
-                    "A. POP3",
-                    "B. IMAP",
-                    "C. SMTP",
-                    "D. SNMP"
+                    "A. Full-scale simulation",
+                    "B. Parallel testing",
+                    "C. Cutover testing",
+                    "D. Tabletop exercise"
                 ],
-                answer: "C"
+                answer: "B"
             }
         ]
     }
@@ -830,7 +850,7 @@ function buildResultPdf(p) {
 
         y = 92;
         doc.text(M, y, ASSESSMENT_TITLE, { size: 19, bold: true, color: PDF_C.primary }); y += 16;
-        doc.text(M, y, 'Foundations Quiz - Result Report', { size: 10.5, color: PDF_C.gray }); y += 18;
+        doc.text(M, y, 'CISM Post Assessment - Result Report', { size: 10.5, color: PDF_C.gray }); y += 18;
     }
 
     function drawInfoBox() {
@@ -1178,7 +1198,7 @@ document.getElementById('assessment-form').addEventListener('submit', async func
 
     const pdfBytes = buildResultPdf(payload);
     const safeName = (s) => s.replace(/[^a-z0-9]+/gi, '-').replace(/^-+|-+$/g, '');
-    const pdfName = `NetworkPlus-FoundationsQuiz-Result-${safeName(payload.first)}-${safeName(payload.last)}-${new Date().toISOString().slice(0, 10)}.pdf`;
+    const pdfName = `CISM-Post-Assessment-Result-${safeName(payload.first)}-${safeName(payload.last)}-${new Date().toISOString().slice(0, 10)}.pdf`;
     const pdfFile = new File([pdfBytes], pdfName, { type: 'application/pdf' });
 
     document.getElementById('payload-first').value = payload.first;
